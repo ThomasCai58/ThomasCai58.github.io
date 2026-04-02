@@ -8,6 +8,15 @@ redirect_from:
   - /about.html
 ---
 
+{% if site.google_scholar_stats_use_cdn %}
+{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
+{% else %}
+{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
+{% endif %}
+{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+
+<span class='anchor' id='about-me'></span>
+
 # 👋 About Me
 Hi!👋 My name is SongLin Cai. I am a sophomore undergraduate student majoring in Mathematics focus in Financial and Actuarial Mathematics at  [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) **I am actively seeking a Summer 2026 Internship or research internship. If you are interested in my experience, I would be very happy to connect.**
 
